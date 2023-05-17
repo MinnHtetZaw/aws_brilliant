@@ -404,9 +404,10 @@ class SaleController extends Controller
         if($role=="Marketing"){
             $fb_Ids= $request->session()->get('user')->employee->fbpages()->pluck('id')->toArray();
 
-            $voucher_lists =Voucher::where('page_id',$fb_Ids)->whereMonth('order_date',$current_month)->whereYear('order_date',$current_month_year)->where('order_type',1)->orderBy('id','desc')->with('fbpage')->with('items')->with('items.purchases')->get();
+            $voucher_lists =Voucher::whereIn('page_id',$fb_Ids)->whereMonth('order_date',$current_month)->whereYear('order_date',$current_month_year)->where('order_type',1)->orderBy('id','desc')->with('fbpage')->with('items')->with('items.purchases')->get();
 
             $fb_pages = $request->session()->get('user')->employee->fbpages;
+
         }
         else{
             $voucher_lists =Voucher::whereMonth('order_date',$current_month)->whereYear('order_date',$current_month_year)->where('order_type',1)->orderBy('id','desc')->with('fbpage')->with('items')->with('items.purchases')->get();
