@@ -1304,7 +1304,7 @@ class OrderController extends Controller
             }else{
                 $fb_Ids = $request->fb_page;
             }
-            $voucher_lists =Voucher::where('page_id',$fb_Ids)->whereBetween('order_date',[$request->from,$request->to])->where('order_type', $request->order_type)->orderBy('id','desc')->with('fbpage')->with('items')->with('items.purchases')->get();
+            $voucher_lists =Voucher::whereIn('page_id',$fb_Ids)->whereBetween('order_date',[$request->from,$request->to])->where('order_type', $request->order_type)->orderBy('id','desc')->with('fbpage')->with('items')->with('items.purchases')->get();
 
         }
         else{
