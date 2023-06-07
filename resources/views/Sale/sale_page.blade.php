@@ -2320,7 +2320,11 @@
                                 })
                             }
 
-
+                            $('#order_type').val() ;
+                         $('#location_flag').val() ;
+                         $('#page_name').val() ;
+                            $('#deliveryfee').val(0);
+                         $('#custphone').val("09");
 
                         }
                     });
@@ -2336,7 +2340,8 @@
                             button: false,
                             timer: 1500,
                         })
-                    location.reload();
+
+                    // location.reload();
                 }
 
                 //  else {
