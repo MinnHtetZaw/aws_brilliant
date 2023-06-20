@@ -391,7 +391,7 @@
                     button: true,
                 })
             } else {
-                console.log(total_purchase_price);
+
                 $('#pur_item_ids').val(JSON.stringify(arr));
                 $('#itempurchaseModal').find('input[id="pur_item_total"]').val(total_purchase_price);
                 $('#itempurchaseModal').modal('show');
@@ -455,14 +455,13 @@
             var mkt_staff = $('#mkt_staffs').val();
             var from = $('#from_Date').val();
             var to = $('#to_Date').val();
-            console.log(order_type,fb_page,from,mkt_staff,to);
+
 
             $.ajax({
 
             type: 'POST',
 
             url: '{{ route('orderListsOrderType') }}',
-            cache: false,
 
             data: {
                 "_token": "{{ csrf_token() }}",
@@ -474,7 +473,7 @@
             },
 
             success: function(data) {
-                console.log(data);
+
                 if (data.length >0) {
                     var html = '';
                     var orderCheckBox = '';
@@ -503,7 +502,7 @@
                                 }
                             }
 
-                            console.log(checkdisable);
+
                             if (item.pivot.status == 1) {
                                 var check_lable_color = 'text-warning';
                             } else if (item.pivot.status == 2 || item.pivot
@@ -612,7 +611,7 @@
             $('input.order_pack_checkbox:checkbox:checked').each(function() {
                 arr.push($(this).val());
             });
-            console.log(arr);
+
             if (!arr.length) {
                 swal({
                     icon: 'error',
@@ -629,7 +628,7 @@
 
         function showRelatedFbPages(value) {
 
-            console.log(value);
+
 
             $('#fb_pages').prop("disabled", false);
 
@@ -649,7 +648,7 @@
 
                 success: function(data) {
                     alert('successs');
-                    console.log(data.page);
+
 
                     $('#fb_pages').append($('<option>').text("All").attr('value', 0));
 

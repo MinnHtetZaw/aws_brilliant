@@ -1324,6 +1324,8 @@ class OrderController extends Controller
 
         }
         // dd($voucher_lists->toArray());
+        return response()->json($voucher_lists);
+        // dd($voucher_lists->toArray());
         // $date = new DateTime('Asia/Yangon');
 
         // $current_Date = $date->format('Y-m-d');
@@ -1355,7 +1357,7 @@ class OrderController extends Controller
         // dd($voucher_lists);
         // return view('Sale.sale_history_page',compact('search_sales','voucher_lists','purchase_lists','current_Date','fb_pages','mkt_staffs'));
         // $voucher_lists =Voucher::where('order_type',$request->order_type)->orderBy('id','desc')->with('items')->with('items.purchases')->get();
-        return response()->json($voucher_lists);
+
 
     }
 
