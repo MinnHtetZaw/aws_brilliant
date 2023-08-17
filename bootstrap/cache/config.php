@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:UVciHNDr/SnGF1GWDaRxkFYCl6G6AKCiMsw6E/r9aOo=',
+    'key' => 'base64:wEiDvmnAwXw8UTt/WJTtj1n3wHvCGL+NUnc8U4Ip5oc=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -235,7 +235,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'aws_brilliant',
+        'database' => 'aws_brilliant1.1',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
