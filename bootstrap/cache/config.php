@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:Z/iL3QLizY/whzmUcVGN5cPiT7kvRnMrzdwHspOLLLw=',
+    'key' => 'base64:wEiDvmnAwXw8UTt/WJTtj1n3wHvCGL+NUnc8U4Ip5oc=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -185,7 +185,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'E:\\Work\\brilliant_pos\\storage\\framework/cache/data',
+        'path' => '/home/ziizii/aws_brilliant/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -235,7 +235,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'aws_brilliant',
+        'database' => 'aws_brilliant1.1',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -245,9 +245,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'aws_brilliant',
+        'database' => 'aws_brilliant1.1',
         'username' => 'root',
-        'password' => '',
+        'password' => '12345678',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -265,9 +265,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'aws_brilliant',
+        'database' => 'aws_brilliant1.1',
         'username' => 'root',
-        'password' => '',
+        'password' => '12345678',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -280,9 +280,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'aws_brilliant',
+        'database' => 'aws_brilliant1.1',
         'username' => 'root',
-        'password' => '',
+        'password' => '12345678',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -415,7 +415,7 @@
     ),
     'temporary_files' => 
     array (
-      'local_path' => 'E:\\Work\\brilliant_pos\\storage\\framework/cache/laravel-excel',
+      'local_path' => '/home/ziizii/aws_brilliant/storage/framework/cache/laravel-excel',
       'remote_disk' => NULL,
       'remote_prefix' => NULL,
       'force_resync_remote' => NULL,
@@ -430,12 +430,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\Work\\brilliant_pos\\storage\\app',
+        'root' => '/home/ziizii/aws_brilliant/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\Work\\brilliant_pos\\storage\\app/public',
+        'root' => '/home/ziizii/aws_brilliant/storage/app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -487,13 +487,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'E:\\Work\\brilliant_pos\\storage\\logs/laravel.log',
+        'path' => '/home/ziizii/aws_brilliant/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'E:\\Work\\brilliant_pos\\storage\\logs/laravel.log',
+        'path' => '/home/ziizii/aws_brilliant/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -543,7 +543,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'E:\\Work\\brilliant_pos\\storage\\logs/laravel.log',
+        'path' => '/home/ziizii/aws_brilliant/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -566,7 +566,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'E:\\Work\\brilliant_pos\\resources\\views/vendor/mail',
+        0 => '/home/ziizii/aws_brilliant/resources/views/vendor/mail',
       ),
     ),
     'log_channel' => NULL,
@@ -645,7 +645,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'E:\\Work\\brilliant_pos\\storage\\framework/sessions',
+    'files' => '/home/ziizii/aws_brilliant/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -666,9 +666,9 @@
   array (
     'paths' => 
     array (
-      0 => 'E:\\Work\\brilliant_pos\\resources\\views',
+      0 => '/home/ziizii/aws_brilliant/resources/views',
     ),
-    'compiled' => 'E:\\Work\\brilliant_pos\\storage\\framework\\views',
+    'compiled' => '/home/ziizii/aws_brilliant/storage/framework/views',
   ),
   'flare' => 
   array (

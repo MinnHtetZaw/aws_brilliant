@@ -24,7 +24,7 @@ class ItemImport implements ToModel,WithHeadingRow
             'item_name' => $row['product_name'],
             'sku_code' => $row['sku_code'],
             // 'original_code' => $row['original_code'],
-            'stock' => 0,
+            'stock' => $row['stock_qty'],
             'brand_name' => $row['brand_name'],
             'selling_price' => $row['selling_price'],
             'purchase_price' => $row['purchase_price'],
